@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encriptador</title>
+	<link rel="stylesheet" href="./styles/style.css">
+	</head>
+	<body>
+		<main class="container_root">
+		<div class="container">
+			<img src="./assets/Logo.png" alt="logo alura" class="container__logo">
+			<input type="text" id="input-texto" placeholder="Ingrese el texto aqui" class="container__input">
+					<div>
+						<a class="material-icons">error</a>
+						<a class="container__botones_texto">Solo letras minúsculas y sin acentos</a>
+						<div class="container__botones">
+							<button onclick="cifrarTexto();" class="container__boton" id="btn-encriptar">Cifrar</button>
+							<button onclick="desCifrarTexto();" class="container__boton" id="btn-desencriptar" disabled>Descifrar</button>
+						</div>
+                        <div>
+                            <div>
+                                <footer class="footer">
+                                    <p>Desarrollado por Marco Trejo © Copyright 2024</p>
+                                </footer>                                  
+                            </div>
+                        </div>
+					</div>
+		</div>
+		<div class="container__muneco">
+					<div>
+						<input class="text-input-salida" type="text" id="msg" value="resultado...">
+						<img src="./assets/Muñeco.png" alt="Una persona mirando a la izquierda" id="muneco_img" class="container__imagen-persona"/>
+					</div>
+					<div>
+						<p class="texto__parrafo__respuesta" type="text" id="respuestaId" hidden>Ningun mensaje fue encontrado</p>
+						<p class="texto__parrafo__ayuda" id="ayudaId">Ingresa el texto que deseas encriptar o desencriptar</p>
+					</div>
+						<button onclick="copiarTexto();" class="container__boton_copiar" id="btn-copiar">Copiar</button>
+                         
+		</div>
+		<script src="./js/app.js"></script>
+	</main>
+	</body>
+     
+</html>
